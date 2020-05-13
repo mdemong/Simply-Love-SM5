@@ -1,4 +1,4 @@
-local TextColor = (ThemePrefs.Get("RainbowMode") and (not HolidayCheer()) and Color.Black) or Color.White
+local TextColor = (ThemePrefs.Get("RainbowMode") and (not HolidayCheer()) and Color.Black) or color("#00dcff")
 
 -- generate a string like "7741 songs in 69 groups, 10 courses"
 local SongStats = ("%i %s %i %s, %i %s"):format(

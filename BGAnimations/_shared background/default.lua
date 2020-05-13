@@ -16,7 +16,7 @@ local file = THEME:GetPathG("", "_VisualStyles/" .. ThemePrefs.Get("VisualTheme"
 
 -- a simple Quad to serve as the backdrop
 af[#af+1] = Def.Quad{
-	InitCommand=function(self) self:FullScreen():Center():diffuse( ThemePrefs.Get("RainbowMode") and Color.White or Color.Black ) end,
+	InitCommand=function(self) self:FullScreen():Center():diffuse( ThemePrefs.Get("RainbowMode") and Color.White or color("#121010") ) end,
 	BackgroundImageChangedMessageCommand=function(self)
 		THEME:ReloadMetrics()
 		SL.Global.ActiveColorIndex = ThemePrefs.Get("RainbowMode") and 3 or ThemePrefs.Get("SimplyLoveColor")
